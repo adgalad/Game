@@ -769,8 +769,8 @@ bool CEntity::PosValidEntity(CEntity* Entity, int NewX, int NewY) {
         
         return false;
     }
-    
-    return true;*/
+    */
+    return true;
 }
 
 bool CEntity::PosValidTile(CTile* Tile) {
