@@ -1,0 +1,7 @@
+6
+Chara.png 32 32 2 0 100
+Brure.png 32 32 2 100 0
+Fira.png  32 32 2 100 100
+Chara.png 32 32 2 0 200
+Brure.png 32 32 2 200 0
+Fira.png  32 32 2 200 200
