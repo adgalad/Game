@@ -1,45 +1,5 @@
-//
-//  CArea.h
-//  HelloSDL
-//
-//  Created by Carlos Spaggiari on 5/1/14.
-//  Copyright (c) 2014 Student. All rights reserved.
-//
 
-#ifndef HelloSDL_CArea_h
-#define HelloSDL_CArea_h
-
-#include "CMap.h"
-#include <iostream>
-
-class CArea {
-public:
-    static CArea            AreaControl;
-    
-public:
-    std::vector<CMap>       MapList;
-    
-
-    int                     AreaSize;
-    
-    SDL_Surface*        Surf_Tileset;
-    
-public:
-    CArea();
-    
-    bool    OnLoad(std::string File);
-    
-    void    OnRender(SDL_Surface* Surf_Display, int CameraX, int CameraY);
-    
-    void    OnCleanup();
-    
-    CTile*  GetTile(int X, int Y);
-    
-    CMap*   GetMap(int X, int Y);
-};
-
-
-
+#include "CArea.h"
 
 CArea CArea::AreaControl;
 
@@ -63,13 +23,13 @@ bool CArea::OnLoad(std::string File) {
     
     fscanf(FileHandle, "%s\n", TilesetFile);
     MapFileStr = path+TilesetFile;
-     std::cout << " file: "+MapFileStr+" \n";
+    std::cout << " file: "+MapFileStr+" \n";
     if((Surf_Tileset = Csurface::OnLoad(&MapFileStr[0])) == false) {
         fclose(FileHandle);
-
+        
         return false;
     }
-
+    
     fscanf(FileHandle, "%d\n", &AreaSize);
     
     for(int X = 0;X < AreaSize;X++) {
@@ -78,7 +38,7 @@ bool CArea::OnLoad(std::string File) {
             
             fscanf(FileHandle, "%s ", MapFile);
             MapFileStr = MapFile;
-
+            
             CMap tempMap;
             if(tempMap.OnLoad(&MapFileStr[0]) == false) {
                 fclose(FileHandle);
@@ -152,5 +112,3 @@ CTile* CArea::GetTile(int X, int Y) {
     
     return Map->GetTile(X, Y);
 }
-
-#endif

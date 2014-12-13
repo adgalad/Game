@@ -9,6 +9,7 @@
 #ifndef HelloSDL_Define_h
 #define HelloSDL_Define_h
 
+#include <SDL/SDL.h>
 
 #define MAP_WIDTH    200
 #define MAP_HEIGHT   200

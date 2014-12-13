@@ -6,30 +6,12 @@
 //  Copyright (c) 2014 Student. All rights reserved.
 //
 
-#include "OnEvent.h"
-#include "OnLoop.h"
-#include "OnRender.h"
-
-#ifndef HelloSDL_OnGame_h
-#define HelloSDL_OnGame_h
 
 
+#ifndef ONGAME_H
+#define ONGAME_H
 
-
-int Game::OnGame()
-{
-
-    SDL_Event Event;
-    while(running)
-    {
-        while(SDL_PollEvent(&Event)){
-            OnEvent(&Event);
-        }
-        OnLoop();
-        OnRender();
-    }
-    return 0;
-}
-
+#include "Define.h"
+#include "Game.h"
 
 #endif

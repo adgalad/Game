@@ -7,14 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		072C8B271907527100E324D4 /* SDL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 072C8B261907527100E324D4 /* SDL.framework */; };
 		072C8B2E1907683C00E324D4 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C93E3BA13942F620096FAB3 /* OpenGL.framework */; };
 		075EB04F1910AB5D00A637C2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 075EB04E1910AB5D00A637C2 /* Cocoa.framework */; };
-		075EB0511910AB6900A637C2 /* SDL_image.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 075EB0501910AB6900A637C2 /* SDL_image.framework */; };
-		07B0094A1921CF5C00737D2D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07B009411921CF5C00737D2D /* main.cpp */; };
 		07B009551921CF7400737D2D /* en.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 07B0094C1921CF7400737D2D /* en.lproj */; };
 		07B009561921CF7400737D2D /* HelloSDL-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 07B0094D1921CF7400737D2D /* HelloSDL-Info.plist */; };
-		07B009571921CF7400737D2D /* HelloSDLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B009501921CF7400737D2D /* HelloSDLAppDelegate.m */; };
 		07B009581921CF7400737D2D /* SDLMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B009521921CF7400737D2D /* SDLMain.m */; };
 		07B009591921CF7400737D2D /* trash.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07B009531921CF7400737D2D /* trash.cpp */; };
 		07B0096D1921CF9B00737D2D /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 07B0095B1921CF9B00737D2D /* 1.png */; };
@@ -35,32 +31,13 @@
 		07B0097C1921CF9B00737D2D /* tiles1.png in Resources */ = {isa = PBXBuildFile; fileRef = 07B0096A1921CF9B00737D2D /* tiles1.png */; };
 		07B0097D1921CF9B00737D2D /* yoshi.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 07B0096B1921CF9B00737D2D /* yoshi.bmp */; };
 		07B0097E1921CF9B00737D2D /* yoshi.png in Resources */ = {isa = PBXBuildFile; fileRef = 07B0096C1921CF9B00737D2D /* yoshi.png */; };
+		07CB989C19FD919600F277F9 /* SDL_image.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07CB989A19FD919600F277F9 /* SDL_image.framework */; };
+		07CB989D19FD919600F277F9 /* SDL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07CB989B19FD919600F277F9 /* SDL.framework */; };
+		07CB989F19FD91C000F277F9 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07CB989E19FD91C000F277F9 /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		072C8B261907527100E324D4 /* SDL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL.framework; path = ../../SDL.framework; sourceTree = "<group>"; };
 		075EB04E1910AB5D00A637C2 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
-		075EB0501910AB6900A637C2 /* SDL_image.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL_image.framework; path = ../../SDL_image.framework; sourceTree = "<group>"; };
-		07B009361921CF5C00737D2D /* Camara.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Camara.h; path = Headers/Camara.h; sourceTree = "<group>"; };
-		07B009371921CF5C00737D2D /* CAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CAnimation.h; path = Headers/CAnimation.h; sourceTree = "<group>"; };
-		07B009381921CF5C00737D2D /* CArea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CArea.h; path = Headers/CArea.h; sourceTree = "<group>"; };
-		07B009391921CF5C00737D2D /* CEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CEntity.h; path = Headers/CEntity.h; sourceTree = "<group>"; };
-		07B0093A1921CF5C00737D2D /* CEntityCol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CEntityCol.h; path = Headers/CEntityCol.h; sourceTree = "<group>"; };
-		07B0093B1921CF5C00737D2D /* CFPS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CFPS.h; path = Headers/CFPS.h; sourceTree = "<group>"; };
-		07B0093C1921CF5C00737D2D /* CMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CMap.h; path = Headers/CMap.h; sourceTree = "<group>"; };
-		07B0093D1921CF5C00737D2D /* CPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CPlayer.h; path = Headers/CPlayer.h; sourceTree = "<group>"; };
-		07B0093E1921CF5C00737D2D /* CTile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CTile.h; path = Headers/CTile.h; sourceTree = "<group>"; };
-		07B0093F1921CF5C00737D2D /* Define.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Define.h; path = Headers/Define.h; sourceTree = "<group>"; };
-		07B009401921CF5C00737D2D /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Game.h; path = Headers/Game.h; sourceTree = "<group>"; };
-		07B009411921CF5C00737D2D /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = Headers/main.cpp; sourceTree = "<group>"; };
-		07B009421921CF5C00737D2D /* Objeto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Objeto.h; path = Headers/Objeto.h; sourceTree = "<group>"; };
-		07B009431921CF5C00737D2D /* OnEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OnEvent.h; path = Headers/OnEvent.h; sourceTree = "<group>"; };
-		07B009441921CF5C00737D2D /* OnExecute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OnExecute.h; path = Headers/OnExecute.h; sourceTree = "<group>"; };
-		07B009451921CF5C00737D2D /* OnGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OnGame.h; path = Headers/OnGame.h; sourceTree = "<group>"; };
-		07B009461921CF5C00737D2D /* OnInit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OnInit.h; path = Headers/OnInit.h; sourceTree = "<group>"; };
-		07B009471921CF5C00737D2D /* OnLoop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OnLoop.h; path = Headers/OnLoop.h; sourceTree = "<group>"; };
-		07B009481921CF5C00737D2D /* OnRender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OnRender.h; path = Headers/OnRender.h; sourceTree = "<group>"; };
-		07B009491921CF5C00737D2D /* Surface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Surface.h; path = Headers/Surface.h; sourceTree = "<group>"; };
 		07B0094C1921CF7400737D2D /* en.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; name = en.lproj; path = HelloSDL/en.lproj; sourceTree = "<group>"; };
 		07B0094D1921CF7400737D2D /* HelloSDL-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "HelloSDL-Info.plist"; path = "HelloSDL/HelloSDL-Info.plist"; sourceTree = "<group>"; };
 		07B0094E1921CF7400737D2D /* HelloSDL-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "HelloSDL-Prefix.pch"; path = "HelloSDL/HelloSDL-Prefix.pch"; sourceTree = "<group>"; };
@@ -88,6 +65,29 @@
 		07B0096A1921CF9B00737D2D /* tiles1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tiles1.png; path = Resource/tiles1.png; sourceTree = "<group>"; };
 		07B0096B1921CF9B00737D2D /* yoshi.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; name = yoshi.bmp; path = Resource/yoshi.bmp; sourceTree = "<group>"; };
 		07B0096C1921CF9B00737D2D /* yoshi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = yoshi.png; path = Resource/yoshi.png; sourceTree = "<group>"; };
+		07CB986319FD915D00F277F9 /* Camara.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Camara.h; path = Headers/Camara.h; sourceTree = "<group>"; };
+		07CB986519FD915D00F277F9 /* CAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CAnimation.h; path = Headers/CAnimation.h; sourceTree = "<group>"; };
+		07CB986719FD915D00F277F9 /* CArea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CArea.h; path = Headers/CArea.h; sourceTree = "<group>"; };
+		07CB986919FD915D00F277F9 /* CCamara.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCamara.h; path = Headers/CCamara.h; sourceTree = "<group>"; };
+		07CB986B19FD915D00F277F9 /* CEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CEntity.h; path = Headers/CEntity.h; sourceTree = "<group>"; };
+		07CB986D19FD915D00F277F9 /* CEntityCol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CEntityCol.h; path = Headers/CEntityCol.h; sourceTree = "<group>"; };
+		07CB986F19FD915D00F277F9 /* CFPS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CFPS.h; path = Headers/CFPS.h; sourceTree = "<group>"; };
+		07CB987119FD915D00F277F9 /* CMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CMap.h; path = Headers/CMap.h; sourceTree = "<group>"; };
+		07CB987319FD915D00F277F9 /* CPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CPlayer.h; path = Headers/CPlayer.h; sourceTree = "<group>"; };
+		07CB987419FD915D00F277F9 /* CTile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CTile.h; path = Headers/CTile.h; sourceTree = "<group>"; };
+		07CB987519FD915D00F277F9 /* Define.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Define.h; path = Headers/Define.h; sourceTree = "<group>"; };
+		07CB987619FD915D00F277F9 /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Game.h; path = Headers/Game.h; sourceTree = "<group>"; };
+		07CB987919FD915D00F277F9 /* Objeto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Objeto.h; path = Headers/Objeto.h; sourceTree = "<group>"; };
+		07CB987B19FD915D00F277F9 /* OnEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OnEvent.h; path = Headers/OnEvent.h; sourceTree = "<group>"; };
+		07CB987D19FD915D00F277F9 /* OnExecute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OnExecute.h; path = Headers/OnExecute.h; sourceTree = "<group>"; };
+		07CB987F19FD915D00F277F9 /* OnGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OnGame.h; path = Headers/OnGame.h; sourceTree = "<group>"; };
+		07CB988119FD915D00F277F9 /* OnInit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OnInit.h; path = Headers/OnInit.h; sourceTree = "<group>"; };
+		07CB988319FD915D00F277F9 /* OnLoop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OnLoop.h; path = Headers/OnLoop.h; sourceTree = "<group>"; };
+		07CB988519FD915D00F277F9 /* OnRender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OnRender.h; path = Headers/OnRender.h; sourceTree = "<group>"; };
+		07CB988719FD915D00F277F9 /* Surface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Surface.h; path = Headers/Surface.h; sourceTree = "<group>"; };
+		07CB989A19FD919600F277F9 /* SDL_image.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL_image.framework; path = ../../../../../SDL_image.framework; sourceTree = "<group>"; };
+		07CB989B19FD919600F277F9 /* SDL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL.framework; path = ../../../../../SDL.framework; sourceTree = "<group>"; };
+		07CB989E19FD91C000F277F9 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = Headers/main.cpp; sourceTree = "<group>"; };
 		9C93E39113942B5A0096FAB3 /* HelloSDL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloSDL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C93E3BA13942F620096FAB3 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -97,10 +97,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				075EB0511910AB6900A637C2 /* SDL_image.framework in Frameworks */,
+				07CB989C19FD919600F277F9 /* SDL_image.framework in Frameworks */,
+				07CB989D19FD919600F277F9 /* SDL.framework in Frameworks */,
 				075EB04F1910AB5D00A637C2 /* Cocoa.framework in Frameworks */,
 				072C8B2E1907683C00E324D4 /* OpenGL.framework in Frameworks */,
-				072C8B271907527100E324D4 /* SDL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,26 +110,27 @@
 		07B0094B1921CF6100737D2D /* Headers */ = {
 			isa = PBXGroup;
 			children = (
-				07B009361921CF5C00737D2D /* Camara.h */,
-				07B009371921CF5C00737D2D /* CAnimation.h */,
-				07B009381921CF5C00737D2D /* CArea.h */,
-				07B009391921CF5C00737D2D /* CEntity.h */,
-				07B0093A1921CF5C00737D2D /* CEntityCol.h */,
-				07B0093B1921CF5C00737D2D /* CFPS.h */,
-				07B0093C1921CF5C00737D2D /* CMap.h */,
-				07B0093D1921CF5C00737D2D /* CPlayer.h */,
-				07B0093E1921CF5C00737D2D /* CTile.h */,
-				07B0093F1921CF5C00737D2D /* Define.h */,
-				07B009401921CF5C00737D2D /* Game.h */,
-				07B009411921CF5C00737D2D /* main.cpp */,
-				07B009421921CF5C00737D2D /* Objeto.h */,
-				07B009431921CF5C00737D2D /* OnEvent.h */,
-				07B009441921CF5C00737D2D /* OnExecute.h */,
-				07B009451921CF5C00737D2D /* OnGame.h */,
-				07B009461921CF5C00737D2D /* OnInit.h */,
-				07B009471921CF5C00737D2D /* OnLoop.h */,
-				07B009481921CF5C00737D2D /* OnRender.h */,
-				07B009491921CF5C00737D2D /* Surface.h */,
+				07CB989E19FD91C000F277F9 /* main.cpp */,
+				07CB986319FD915D00F277F9 /* Camara.h */,
+				07CB986519FD915D00F277F9 /* CAnimation.h */,
+				07CB986719FD915D00F277F9 /* CArea.h */,
+				07CB986919FD915D00F277F9 /* CCamara.h */,
+				07CB986B19FD915D00F277F9 /* CEntity.h */,
+				07CB986D19FD915D00F277F9 /* CEntityCol.h */,
+				07CB986F19FD915D00F277F9 /* CFPS.h */,
+				07CB987119FD915D00F277F9 /* CMap.h */,
+				07CB987319FD915D00F277F9 /* CPlayer.h */,
+				07CB987419FD915D00F277F9 /* CTile.h */,
+				07CB987519FD915D00F277F9 /* Define.h */,
+				07CB987619FD915D00F277F9 /* Game.h */,
+				07CB987919FD915D00F277F9 /* Objeto.h */,
+				07CB987B19FD915D00F277F9 /* OnEvent.h */,
+				07CB987D19FD915D00F277F9 /* OnExecute.h */,
+				07CB987F19FD915D00F277F9 /* OnGame.h */,
+				07CB988119FD915D00F277F9 /* OnInit.h */,
+				07CB988319FD915D00F277F9 /* OnLoop.h */,
+				07CB988519FD915D00F277F9 /* OnRender.h */,
+				07CB988719FD915D00F277F9 /* Surface.h */,
 			);
 			name = Headers;
 			sourceTree = "<group>";
@@ -178,12 +179,12 @@
 		9C93E38613942B590096FAB3 = {
 			isa = PBXGroup;
 			children = (
+				07CB989A19FD919600F277F9 /* SDL_image.framework */,
+				07CB989B19FD919600F277F9 /* SDL.framework */,
 				07B0097F1921CFA000737D2D /* Resource */,
 				07B0094B1921CF6100737D2D /* Headers */,
 				07B0095A1921CF7B00737D2D /* HelloSDL */,
-				075EB0501910AB6900A637C2 /* SDL_image.framework */,
 				075EB04E1910AB5D00A637C2 /* Cocoa.framework */,
-				072C8B261907527100E324D4 /* SDL.framework */,
 				9C93E3BA13942F620096FAB3 /* OpenGL.framework */,
 				9C93E39213942B5A0096FAB3 /* Products */,
 			);
@@ -281,8 +282,7 @@
 			files = (
 				07B009591921CF7400737D2D /* trash.cpp in Sources */,
 				07B009581921CF7400737D2D /* SDLMain.m in Sources */,
-				07B0094A1921CF5C00737D2D /* main.cpp in Sources */,
-				07B009571921CF7400737D2D /* HelloSDLAppDelegate.m in Sources */,
+				07CB989F19FD91C000F277F9 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

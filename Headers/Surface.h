@@ -5,17 +5,18 @@
 //  Created by Carlos Spaggiari on 4/22/14.
 //  Copyright (c) 2014 Student. All rights reserved.
 //
+
+#ifndef HelloSDL_Surface_h
+#define HelloSDL_Surface_h
+
 #include <SDL/SDL.h>
 #include "SDL_image/SDL_image.h"
 #include <string>
 #include "CAnimation.h"
 #include <time.h>
 
-#ifndef HelloSDL_Surface_h
-#define HelloSDL_Surface_h
 
-
-std::string path = "/Users/carlosspaggiari/Desktop/Game/Resource/";
+std::string path = "/Users/carlosspaggiari/Desktop/C-C++/PROYECTOS/Juego_SDL/Game/Resource/";
 
 class Csurface
 {

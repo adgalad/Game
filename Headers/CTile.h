@@ -5,9 +5,11 @@
 //  Created by Carlos Spaggiari on 5/1/14.
 //  Copyright (c) 2014 Student. All rights reserved.
 //
-#include "Define.h"
+
 #ifndef HelloSDL_CTile_h
 #define HelloSDL_CTile_h
+
+#include "Define.h"
 
 enum {
     TILE_TYPE_NONE = 0,
